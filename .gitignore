@@ -1,0 +1,21 @@
+# .gitignore
+.idea/
+node_modules/
+*/.cache
+*/tmp
+
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node.js
+*.log
+*.pid
+*.seed
+lib-cov
+coverage
+.grunt
+.lock-wscript
+build/Release
+node_modules
