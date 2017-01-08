@@ -1,0 +1,1 @@
+﻿export {statics} from './static_pre_conf'

@@ -1,0 +1,67 @@
+{
+  "name": "NetTxtNote",
+  "version": "0.0.1",
+  "description": "Simple note system,for windows,babel-node must be installed globally",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.11.0",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.14.2",
+    "chance": "^0.8.0",
+    "compression": "^1.6.1",
+    "connect-timeout": "^1.7.0",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "formidable": "^1.0.17",
+    "has-color": "^0.1.7",
+    "helmet": "^1.1.0",
+    "lodash": "^4.5.1",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.5",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-deep-populate": "^2.0.3",
+    "mongoose-unique-validator": "^0.6.2",
+    "multer": "^1.1.0",
+    "parseurl": "^1.3.0",
+    "response-time": "^2.3.1",
+    "shelljs": "^0.5.3",
+    "underscore": "^1.8.3",
+    "winston": "^2.2.0"
+  },
+  "scripts": {
+    "preload": "babel-node  preload.js && npm run tsc",
+    "tsc": "tsc",
+    "nodemon": "./node_modules/.bin/nodemon --exec babel-node -- server.js --debug",
+    "prod": "SET NODE_ENV=production && npm run nodemon",
+    "dev": "SET NODE_ENV=development && npm run nodemon",
+    "prod_lin": "NODE_ENV=production && npm run nodemon",
+    "dev_lin": "NODE_ENV=development && npm run nodemon",
+    "test": "ava ./test/main.js"
+  },
+  "repository": {},
+  "author": "",
+  "license": "",
+  "homepage": "",
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.7.6",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "nodemon": "^1.9.0",
+    "randomstring": "^1.1.4"
+  },
+  "ava": {
+    "require": "babel-register",
+    "babel": {
+      "babelrc": true
+    }
+  }
+}

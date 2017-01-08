@@ -1,0 +1,4 @@
+{
+    "ignore": ["node_modules", "views"],
+    "presets": ["es2015", "stage-0"]
+}
